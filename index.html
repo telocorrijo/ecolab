@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EcoLab</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section id="centro">
+        <h1 id="titulo">EcoLab</h1>
+        <p>Explora, Aprende y Protege</p>
+        <button id="Comenzar">Comenzar Aventura</button>
+    </section>
+    <section id="niveles">
+        <h1>Elige tu nivel de conocimiento</h1>
+        <input type="radio" name="fácil" id='Básico'/>
+        <label class="niveles" for='Básico'>
+            <p>Básico</p>
+        </label>
+        <input type="radio" name="fácil" id='Medio'/>
+        <label class="niveles" for='Medio'>
+            <p>Medio</p>
+        </label>
+        <input type="radio" name="fácil" id='Avanzado'/>
+        <label class="niveles" for='Avanzado'>
+            <p>Avanzado</p>
+        </label>
+        <button id='Seleccionar'>Seleccionar Nivel</button>
+    </section>
+    <section id='PreguntaBásica'>
+        <div id="final-score" class="final-score"></div>
+        <div class="question">
+            <h2>1. ¿Cuál es la molécula que transporta el oxígeno en la sangre?</h2>
+            <label><input type="radio" name="q1" value="incorrect"> Hemogloblina</label><br>
+            <label><input type="radio" name="q1" value="incorrect"> Glucosa</label><br>
+            <label><input type="radio" name="q1" value="incorrect"> Insulina</label><br>
+            <label><input type="radio" name="q1" value="correct"> Hemoglobina</label><br>
+            <div id="feedback-q1" class="feedback"></div>
+        </div>
+        <div id="q2" class="question">
+            <h2>2. ¿Qué órgano del cuerpo humano es responsable de filtrar la sangre?</h2>
+            <label><input type="radio" name="q2" value="incorrect"> Hígado</label><br>
+            <label><input type="radio" name="q2" value="correct"> Riñón</label><br>
+            <label><input type="radio" name="q2" value="incorrect"> Páncreas</label><br>
+            <label><input type="radio" name="q2" value="incorrect"> Pulmón</label><br>
+            <div id="feedback-q2" class="feedback"></div>
+        </div>
+        <div id="q3" class="question">
+            <h2>3. ¿Cuál es el órgano más grande del cuerpo humano?</h2>
+            <label><input type="radio" name="q3" value="incorrect"> El hígado</label><br>
+            <label><input type="radio" name="q3" value="incorrect"> Los pulmones</label><br>
+            <label><input type="radio" name="q3" value="correct"> La piel</label><br>
+            <label><input type="radio" name="q3" value="incorrect"> El cerebro</label><br>
+            <div id="feedback-q3" class="feedback"></div>
+        </div>
+        <div id="q4" class="question">
+            <h2>4. ¿Qué diferencia hay entre un vertebrado y un invertebrado?</h2>
+            <label><input type="radio" name="q4" value="incorrect"> Los vertebrados tienen exoesqueleto</label><br>
+            <label><input type="radio" name="q4" value="correct"> Los vertebrados tienen columna vertebral, los invertebrados no</label><br>
+            <label><input type="radio" name="q4" value="incorrect"> Los vertebrados son plantas</label><br>
+            <label><input type="radio" name="q4" value="incorrect"> Los invertebrados tienen alas</label><br>
+            <div id="feedback-q4" class="feedback"></div>
+        </div>
+        <div id="q5" class="question">
+            <h2>5. ¿Qué es un omnívoro?</h2>
+            <label><input type="radio" name="q5" value="correct"> Un organismo que se alimenta de plantas y animales</label><br>
+            <label><input type="radio" name="q5" value="incorrect"> Un organismo que solo come carne</label><br>
+            <label><input type="radio" name="q5" value="incorrect"> Un organismo que solo come plantas</label><br>
+            <label><input type="radio" name="q5" value="incorrect"> Un organismo que se alimenta de desechos</label><br>
+            <div id="feedback-q5" class="feedback"></div>
+        </div>
+        <div id="q6" class="question">
+            <h2>6. ¿Qué es la sucesión ecológica?</h2>
+            <label><input type="radio" name="q6" value="incorrect"> La transferencia de energía en una cadena alimentaria</label><br>
+            <label><input type="radio" name="q6" value="correct"> El proceso de cambio en la estructura de un ecosistema a lo largo del tiempo</label><br>
+            <label><input type="radio" name="q6" value="incorrect"> La evolución de una especie</label><br>
+            <label><input type="radio" name="q6" value="incorrect"> La fotosíntesis en las plantas</label><br>
+            <div id="feedback-q6" class="feedback"></div>
+        </div>
+        <div id="q7" class="question">
+            <h2>7. ¿Qué proceso usan las plantas para convertir la luz solar en energía?</h2>
+            <label><input type="radio" name="q7" value="incorrect"> Respiración</label><br>
+            <label><input type="radio" name="q7" value="incorrect"> Transpiración</label><br>
+            <label><input type="radio" name="q7" value="correct"> Fotosíntesis</label><br>
+            <label><input type="radio" name="q7" value="incorrect"> Digestión</label><br>
+            <div id="feedback-q7" class="feedback"></div>
+        </div>
+        <div id="q8" class="question">
+            <h2>8. ¿Qué órgano usan los peces para respirar bajo el agua?</h2>
+            <label><input type="radio" name="q8" value="incorrect"> Pulmones</label><br>
+            <label><input type="radio" name="q8" value="correct"> Branquias</label><br>
+            <label><input type="radio" name="q8" value="incorrect"> Tráquea</label><br>
+            <label><input type="radio" name="q8" value="incorrect"> Alvéolos</label><br>
+            <div id="feedback-q8" class="feedback"></div>
+        </div>
+        <div id="q9" class="question">
+            <h2>9. ¿Cuál es el principal gas de efecto invernadero responsable del calentamiento global?</h2>
+            <label><input type="radio" name="q9" value="incorrect"> Oxígeno (O₂)</label><br>
+            <label><input type="radio" name="q9" value="incorrect"> Nitrógeno (N₂)</label><br>
+            <label><input type="radio" name="q9" value="incorrect"> Hidrógeno (H₂)</label><br>
+            <label><input type="radio" name="q9" value="correct"> Dióxido de carbono (CO₂)</label><br>
+            <div id="feedback-q9" class="feedback"></div>
+        </div>
+        <div id="q10" class="question">
+            <h2>10. ¿Qué es la biodiversidad?</h2>
+            <label><input type="radio" name="q10" value="correct"> La variedad de vida en un área específica</label><br>
+            <label><input type="radio" name="q10" value="incorrect"> La cantidad de oxígeno en el aire</label><br>
+            <label><input type="radio" name="q10" value="incorrect"> La extensión de un bosque</label><br>
+            <label><input type="radio" name="q10" value="incorrect"> El número de ecosistemas</label><br>
+            <div id="feedback-q10" class="feedback"></div>
+        </div>
+        <div id="q11" class="question">
+            <h2>11. ¿Qué es un depredador?</h2>
+            <label><input type="radio" name="q11" value="incorrect"> Un organismo que solo come plantas</label><br>
+            <label><input type="radio" name="q11" value="incorrect"> Un organismo que descompone materia orgánica</label><br>
+            <label><input type="radio" name="q11" value="incorrect"> Un organismo que vive en simbiosis</label><br>
+            <label><input type="radio" name="q11" value="correct"> Un organismo que caza y se alimenta de otros organismos</label><br>
+            <div id="feedback-q11" class="feedback"></div>
+        </div>
+        <div id="q12" class="question">
+            <h2>12. ¿Qué es un herbívoro?</h2>
+            <label><input type="radio" name="q12" value="incorrect"> Un organismo que se alimenta de carne</label><br>
+            <label><input type="radio" name="q12" value="correct"> Un organismo que se alimenta exclusivamente de plantas</label><br>
+            <label><input type="radio" name="q12" value="incorrect"> Un organismo que se alimenta de todo</label><br>
+            <label><input type="radio" name="q12" value="incorrect"> Un organismo que se alimenta de hongos</label><br>
+            <div id="feedback-q12" class="feedback"></div>
+        </div>
+        <div id="q13" class="question">
+            <h2>13. ¿Qué es una especie invasora?</h2>
+            <label><input type="radio" name="q13" value="incorrect"> Una especie en peligro de extinción</label><br>
+            <label><input type="radio" name="q13" value="incorrect"> Una especie domesticada</label><br>
+            <label><input type="radio" name="q13" value="incorrect"> Una especie adaptada a climas fríos</label><br>
+            <label><input type="radio" name="q13" value="correct"> Una especie que no es nativa de un área y causa daños al ecosistema</label><br>
+            <div id="feedback-q13" class="feedback"></div>
+        </div>
+        <div id="q14" class="question">
+            <h2>14. ¿Qué son las algas?</h2>
+            <label><input type="radio" name="q14" value="incorrect"> Plantas terrestres</label><br>
+            <label><input type="radio" name="q14" value="correct"> Organismos acuáticos fotosintéticos</label><br>
+            <label><input type="radio" name="q14" value="incorrect"> Hongos</label><br>
+            <label><input type="radio" name="q14" value="incorrect"> Bacterias</label><br>
+            <div id="feedback-q14" class="feedback"></div>
+        </div>
+        <div id="q15" class="question">
+            <h2>15. ¿Qué es un ecosistema acuático?</h2>
+            <label><input type="radio" name="q15" value="incorrect"> Un ecosistema en el desierto</label><br>
+            <label><input type="radio" name="q15" value="correct"> Un ecosistema que se encuentra en cuerpos de agua</label><br>
+            <label><input type="radio" name="q15" value="incorrect"> Un ecosistema forestal</label><br>
+            <label><input type="radio" name="q15" value="incorrect"> Un ecosistema urbano</label><br>
+            <div id="feedback-q15" class="feedback"></div>
+        </div>
+    </section>
+    <section id="PreguntaMedia">
+        <div id="q1" class="question">
+            <h2>1. ¿Cuál es la función principal de las mitocondrias en las células eucariotas?</h2>
+            <label><input type="radio" name="q1" value="incorrect"> Síntesis de proteínas</label><br>
+            <label><input type="radio" name="q1" value="correct"> Producción de energía</label><br>
+            <label><input type="radio" name="q1" value="incorrect"> Almacenamiento de nutrientes</label><br>
+            <label><input type="radio" name="q1" value="incorrect"> División celular</label><br>
+            <div id="feedback-q1" class="feedback"></div>
+        </div>
+        <div id="q2" class="question">
+            <h2>2. ¿Cómo se llama el proceso por el cual las plantas convierten dióxido de carbono y agua en glucosa y oxígeno?</h2>
+            <label><input type="radio" name="q2" value="incorrect"> Respiración celular</label><br>
+            <label><input type="radio" name="q2" value="correct"> Fotosíntesis</label><br>
+            <label><input type="radio" name="q2" value="incorrect">  Fermentación</label><br>
+            <label><input type="radio" name="q2" value="incorrect"> Glucólisis</label><br>
+            <div id="feedback-q2" class="feedback"></div>
+        </div>
+        <div id="q3" class="question">
+            <h2>3. ¿Qué tipo de célula tiene una pared celular?</h2>
+            <label><input type="radio" name="q3" value="incorrect"> Célula animal</label><br>
+            <label><input type="radio" name="q3" value="correct"> Célula vegetal</label><br>
+            <label><input type="radio" name="q3" value="incorrect"> Célula nerviosa</label><br>
+            <label><input type="radio" name="q3" value="incorrect"> Célula muscular</label><br>
+            <div id="feedback-q3" class="feedback"></div>
+        </div>
+        <div id="q4" class="question">
+            <h2>4. ¿Qué molécula almacena la información genética?</h2>
+            <label><input type="radio" name="q4" value="incorrect"> ARN (Ácido ribonucleico)</label><br>
+            <label><input type="radio" name="q4" value="correct"> ADN (Ácido desoxirribonucleico)</label><br>
+            <label><input type="radio" name="q4" value="incorrect"> ATP (Adenosina trifosfato)</label><br>
+            <label><input type="radio" name="q4" value="incorrect"> Glucosa</label><br>
+            <div id="feedback-q4" class="feedback"></div>
+        </div>
+        <div id="q5" class="question">
+            <h2>5. ¿Qué proceso biológico es responsable de la producción de gametos?</h2>
+            <label><input type="radio" name="q5" value="incorrect"> Mitosis</label><br>
+            <label><input type="radio" name="q5" value="correct"> Meiosis</label><br>
+            <label><input type="radio" name="q5" value="incorrect"> Fisión binaria</label><br>
+            <label><input type="radio" name="q5" value="incorrect"> Fermentación</label><br>
+            <div id="feedback-q5" class="feedback"></div>
+        </div>
+        <div id="q6" class="question">
+            <h2>6. ¿Cuál es la unidad básica de la vida?</h2>
+            <label><input type="radio" name="q6" value="incorrect"> Tejido</label><br>
+            <label><input type="radio" name="q6" value="correct"> Célula</label><br>
+            <label><input type="radio" name="q6" value="incorrect"> Órgano</label><br>
+            <label><input type="radio" name="q6" value="incorrect"> Molécula</label><br>
+            <div id="feedback-q6" class="feedback"></div>
+        </div>
+        <div id="q7" class="question">
+            <h2>7. ¿Qué es la biodiversidad genética?</h2>
+            <label><input type="radio" name="q7" value="incorrect"> La cantidad de diferentes especies en un área</label><br>
+            <label><input type="radio" name="q7" value="correct"> La variabilidad genética dentro de una especie</label><br>
+            <label><input type="radio" name="q7" value="incorrect"> La diversidad de ecosistemas en una región</label><br>
+            <label><input type="radio" name="q7" value="incorrect"> La diferencia entre especies autótrofas y heterótrofas</label><br>
+            <div id="feedback-q7" class="feedback"></div>
+        </div>
+        <div id="q8" class="question">
+            <h2>8. ¿Qué es el efecto invernadero?</h2>
+            <label><input type="radio" name="q8" value="incorrect"> El enfriamiento de la Tierra</label><br>
+            <label><input type="radio" name="q8" value="correct"> El calentamiento de la Tierra debido a la acumulación de gases en la atmósfera que atrapan el calor</label><br>
+            <label><input type="radio" name="q8" value="incorrect"> La destrucción de la capa de ozono</label><br>
+            <label><input type="radio" name="q8" value="incorrect"> La variabilidad climática natural</label><br>
+            <div id="feedback-q8" class="feedback"></div>
+        </div>
+
+        <div id="q9" class="question">
+            <h2>9. ¿Qué es un enlace iónico?</h2>
+            <label><input type="radio" name="q9" value="incorrect"> Un enlace donde los átomos comparten electrones</label><br>
+            <label><input type="radio" name="q9" value="correct"> Un enlace químico formado por la transferencia de electrones de un átomo a otro</label><br>
+            <label><input type="radio" name="q9" value="incorrect"> Un enlace entre átomos de metales</label><br>
+            <label><input type="radio" name="q9" value="incorrect"> Un enlace débil que no forma compuestos estables</label><br>
+            <div id="feedback-q9" class="feedback"></div>
+        </div>
+        <div id="q10" class="question">
+            <h2>10. ¿Qué es un ácido según la teoría de Bronsted-Lowry?</h2>
+            <label><input type="radio" name="q10" value="incorrect"> Una sustancia que acepta un protón</label><br>
+            <label><input type="radio" name="q10" value="correct">  Una sustancia que dona un protón (H⁺) en una reacción química</label><br>
+            <label><input type="radio" name="q10" value="incorrect"> Un compuesto que forma sales</label><br>
+            <label><input type="radio" name="q10" value="incorrect"> Una sustancia con pH mayor a 7</label><br>
+            <div id="feedback-q10" class="feedback"></div>
+        </div>
+        <div id="q11" class="question">
+            <h2>11. ¿Qué es la fotosíntesis?</h2>
+            <label><input type="radio" name="q11" value="incorrect"> La descomposición de materia orgánica</label><br>
+            <label><input type="radio" name="q11" value="correct"> El proceso por el cual las plantas y otros organismos convierten la luz solar en energía química</label><br>
+            <label><input type="radio" name="q11" value="incorrect"> La respiración celular</label><br>
+            <label><input type="radio" name="q11" value="incorrect"> La producción de oxígeno por las plantas</label><br>
+            <div id="feedback-q11" class="feedback"></div>
+        </div>
+        <div id="q11" class="question">
+            <h2>11. ¿Qué es un anticuerpo?</h2>
+            <label><input type="radio" name="q11" value="incorrect"> Una célula que ingiere bacterias</label><br>
+            <label><input type="radio" name="q11" value="correct"> Una proteína producida por el sistema inmunológico para neutralizar patógenos como bacterias y virus</label><br>
+            <label><input type="radio" name="q11" value="incorrect"> Un tipo de glóbulo rojo</label><br>
+            <label><input type="radio" name="q11" value="incorrect"> Una hormona que regula el metabolismo</label><br>
+            <div id="feedback-q11" class="feedback"></div>
+        </div>
+        <div id="q12" class="question">
+            <h2>12. ¿Qué es el efecto de la capa de ozono en el ambiente?</h2>
+            <label><input type="radio" name="q12" value="incorrect">  Aumenta la temperatura global</label><br>
+            <label><input type="radio" name="q12" value="correct"> Filtra la radiación ultravioleta del sol, protegiendo la vida en la Tierra</label><br>
+            <label><input type="radio" name="q12" value="incorrect"> Contribuye a la formación de nubes</label><br>
+            <label><input type="radio" name="q12" value="incorrect"> Ayuda a retener el dióxido de carbono en la atmósfera</label><br>
+            <div id="feedback-q12" class="feedback"></div>
+        </div>
+        <div id="q13" class="question">
+            <h2>13. ¿Qué diferencia hay entre la mitosis y la meiosis?</h2>
+            <label><input type="radio" name="q13" value="incorrect"> La mitosis ocurre solo en células sexuales</label><br>
+            <label><input type="radio" name="q13" value="correct"> La mitosis produce células idénticas, la meiosis produce células con la mitad de cromosomas</label><br>
+            <label><input type="radio" name="q13" value="incorrect"> La meiosis duplica el número de cromosomas</label><br>
+            <label><input type="radio" name="q13" value="incorrect"> La mitosis solo ocurre en plantas</label><br>
+            <div id="feedback-q13" class="feedback"></div>
+        </div>
+        <div id="q14" class="question">
+            <h2>14. ¿Qué diferencia hay entre un enlace iónico y un enlace covalente?</h2>
+            <label><input type="radio" name="q14" value="incorrect"> Ambos enlaces implican solo el compartimiento de protones</label><br>
+            <label><input type="radio" name="q14" value="correct"> Un enlace iónico se forma por la transferencia de electrones, un enlace covalente por el compartimiento de electrones</label><br>
+            <label><input type="radio" name="q14" value="incorrect"> Los enlaces covalentes se forman entre metales y no metales</label><br>
+            <label><input type="radio" name="q14" value="incorrect"> Los enlaces iónicos son más comunes en moléculas orgánicas</label><br>
+            <div id="feedback-q14" class="feedback"></div>
+        </div>
+        <div id="q15" class="question">
+            <h2>15. ¿Qué es una molécula polar?</h2>
+            <label><input type="radio" name="q15" value="incorrect"> Una molécula que no tiene carga neta</label><br>
+            <label><input type="radio" name="q15" value="correct"> Una molécula con una distribución desigual de carga eléctrica</label><br>
+            <label><input type="radio" name="q15" value="incorrect"> Una molécula que no se disuelve en agua</label><br>
+            <label><input type="radio" name="q15" value="incorrect"> Una molécula con una carga eléctrica neta negativa</label><br>
+            <div id="feedback-q15" class="feedback"></div>
+        </div>
+    </section>
+    <section id="PreguntaAvanzada">
+        <p>Nivel Avanzado</p>
+    </section>
+</body>
+<script src="index.js"></script>
+</html>
