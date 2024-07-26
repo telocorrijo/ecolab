@@ -1,4 +1,6 @@
-let Indice = document.getElementById('centro')
+let Centro = document.getElementById('centro')
+let Indice = document.getElementById('Indice')
+Indice.style.display = 'none'
 let Niveles = document.getElementById('niveles')
 Niveles.style.display = 'none'
 let NivelBásico = document.getElementById('Básico')
@@ -12,12 +14,25 @@ let PreguntaMedia = document.getElementById('PreguntaMedia')
 PreguntaMedia.style.display = 'none'
 let PreguntaAvanzada = document.getElementById('PreguntaAvanzada')
 PreguntaAvanzada.style.display = 'none'
-let score = 0;
+let BtnFinalizar  = document.getElementById('Finalizar')
+BtnFinalizar.addEventListener('click', OcultarPgt)
+let BtnFinalizar2  = document.getElementById('Finalizar2')
+BtnFinalizar2.addEventListener('click', OcultarPgt2)
+let Final = document.getElementById('Final')
+Final.style.display = 'none'
+let BtnIndice = document.getElementById('Comenzar2')
+BtnIndice.addEventListener('click', ComenzarBtn)
 function IniciarPagina() {
     let InicioPagina = document.getElementById('Comenzar')
     InicioPagina.addEventListener('click', Comenzar)
 }
 function Comenzar(){
+    Centro.style.display = 'none'
+    Indice.style.display = 'block'
+    Niveles.style.display = 'none'
+}
+function ComenzarBtn(){
+    Centro.style.display = 'none'
     Indice.style.display = 'none'
     Niveles.style.display = 'block'
 }
@@ -59,12 +74,6 @@ function SelecciónNiveles(){
                 const selected = q.querySelector('input[type="radio"]:checked');
                 return selected !== null;
             });
-
-            if (allAnswered) {
-                const finalScoreDiv = document.getElementById('final-score');
-                finalScoreDiv.textContent = `Has terminado el cuestionario. ¡Buen trabajo! Tu puntuación es: ${score}/15 preguntas`;
-                finalScoreDiv.style.color = "black";
-            }
         }
 
         // Agregar event listeners a todos los radio buttons
@@ -72,4 +81,16 @@ function SelecciónNiveles(){
         radioButtons.forEach(radio => {
             radio.addEventListener('change', checkAnswer);
         });
+function OcultarPgt() {
+    Final.style.display = 'block'
+    PreguntaBásica.style.display = 'none'
+    PreguntaMedia.style.display = 'none'
+    PreguntaAvanzada.style.display = 'none'
+}
+function OcultarPgt2() {
+    Final.style.display = 'block'
+    PreguntaBásica.style.display = 'none'
+    PreguntaMedia.style.display = 'none'
+    PreguntaAvanzada.style.display = 'none'
+}
 window.addEventListener('load',IniciarPagina)
