@@ -1,3 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HR+Lijeva:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+HR+Lijeva:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Playwrite+HR+Lijeva:wght@100..400&display=swap');
+body {
+    color: rgb(0, 157, 255);
+    background-image: url('galaxia.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* Para que la imagen se mantenga fija mientras se desplaza */
+    font-family: "Playwrite HR Lijeva", cursive;
+}
+.Parrafo {
+    font-size: 20px;
+}
+.PgtTitulo {
+    font-family: "Pacifico", cursive;
+}
+.RtaTitulo {
+    font-family: "Lobster", sans-serif;
+}
 #centro {
     display: flex;
     justify-content: center;
@@ -16,9 +37,28 @@
     min-height: 100vh; /* Esto centra verticalmente la sección */
     padding: 20px;
 }
+#Indice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh; /* Esto centra verticalmente la sección */
+    padding: 20px;
+}
+#Comenzar, #Seleccionar, #Finalizar, #Finalizar2, #Comenzar2 {
+    color: rgb(0, 157, 255);
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Lobster", sans-serif;
+}
 input{
     display: none;
 }
 input:hover + label {
+    color: red
+}
+input:checked + label {
     color: red
 }
