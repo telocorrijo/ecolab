@@ -15,13 +15,20 @@ PreguntaMedia.style.display = 'none'
 let PreguntaAvanzada = document.getElementById('PreguntaAvanzada')
 PreguntaAvanzada.style.display = 'none'
 let BtnFinalizar  = document.getElementById('Finalizar')
-BtnFinalizar.addEventListener('click', OcultarPgt)
+BtnFinalizar.addEventListener('click', RevisarTest)
 let BtnFinalizar2  = document.getElementById('Finalizar2')
-BtnFinalizar2.addEventListener('click', OcultarPgt2)
+BtnFinalizar2.addEventListener('click', RevisarTest)
+let BtnFinalizar3  = document.getElementById('Finalizar3')
+BtnFinalizar3.addEventListener('click', RevisarTest)
 let Final = document.getElementById('Final')
 Final.style.display = 'none'
 let BtnIndice = document.getElementById('Comenzar2')
 BtnIndice.addEventListener('click', ComenzarBtn)
+let TerminarTest = 0
+let Puntuación = 0
+let PuntuaciónN = 0
+let CtndPuntos = document.getElementById('Puntuación')
+let CtndPuntosN = document.getElementById('PuntuacionN')
 function IniciarPagina() {
     let InicioPagina = document.getElementById('Comenzar')
     InicioPagina.addEventListener('click', Comenzar)
@@ -62,10 +69,15 @@ function SelecciónNiveles(){
             if (selectedOption.value === "correct") {
                 feedbackDiv.textContent = "¡Correcto!";
                 feedbackDiv.style.color = "green";
-                score += 1; // Sumar un punto por respuesta correcta
+                TerminarTest += 1; // Sumar un punto por respuesta correcta
+                Puntuación += 1
+                CtndPuntos.innerHTML = Puntuación
             } else {
                 feedbackDiv.textContent = "Incorrecto.";
                 feedbackDiv.style.color = "red";
+                TerminarTest += 1
+                PuntuaciónN += 1
+                CtndPuntosN.innerHTML = PuntuaciónN
             }
 
             // Mostrar la puntuación final si todas las preguntas han sido respondidas
@@ -81,6 +93,13 @@ function SelecciónNiveles(){
         radioButtons.forEach(radio => {
             radio.addEventListener('change', checkAnswer);
         });
+        function RevisarTest() {
+            if(TerminarTest === 15){
+                OcultarPgt()
+                OcultarPgt2()
+                OcultarPgt3()
+            }
+        }
 function OcultarPgt() {
     Final.style.display = 'block'
     PreguntaBásica.style.display = 'none'
@@ -88,6 +107,12 @@ function OcultarPgt() {
     PreguntaAvanzada.style.display = 'none'
 }
 function OcultarPgt2() {
+    Final.style.display = 'block'
+    PreguntaBásica.style.display = 'none'
+    PreguntaMedia.style.display = 'none'
+    PreguntaAvanzada.style.display = 'none'
+}
+function OcultarPgt3() {
     Final.style.display = 'block'
     PreguntaBásica.style.display = 'none'
     PreguntaMedia.style.display = 'none'
