@@ -1,20 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+HR+Lijeva:wght@100..400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+HR+Lijeva:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Playwrite+HR+Lijeva:wght@100..400&display=swap');
 body {
     color: rgb(255, 255, 255);
-    background-image: url('galaxia.jpg');
+    background-image: url('galaxia2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed; /* Para que la imagen se mantenga fija mientras se desplaza */
-    font-family: "Playwrite HR Lijeva", cursive;
+    font-family: "Rubik", sans-serif;
 }
 .Parrafo {
     font-size: 20px;
 }
 .PgtTitulo {
-    font-family: "Pacifico", cursive;
+    font-family: "Montserrat", sans-serif;
 }
 .RtaTitulo {
     font-family: "Lobster", sans-serif;
@@ -46,7 +46,7 @@ body {
     min-height: 100vh; /* Esto centra verticalmente la sección */
     padding: 20px;
 }
-#Comenzar, #Seleccionar, #Finalizar, #Finalizar2, #Comenzar2 {
+#Comenzar, #Seleccionar, #Finalizar, #Finalizar2, #Comenzar2, #Finalizar3 {
     color: rgb(255, 255, 255);
     background-color: transparent;
     border-radius: 5px;
@@ -61,4 +61,13 @@ input:hover + label {
 }
 input:checked + label {
     color: red
+}
+#Final {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh; /* Esto centra verticalmente la sección */
+    padding: 20px;
 }
