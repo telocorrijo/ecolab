@@ -29,6 +29,11 @@ let Puntuación = 0
 let PuntuaciónN = 0
 let CtndPuntos = document.getElementById('Puntuación')
 let CtndPuntosN = document.getElementById('PuntuacionN')
+let Volver = document.getElementById('Volver')
+Volver.addEventListener('click', VolverInicio)
+function VolverInicio() {
+    location.reload()
+}
 function IniciarPagina() {
     let InicioPagina = document.getElementById('Comenzar')
     InicioPagina.addEventListener('click', Comenzar)
