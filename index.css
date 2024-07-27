@@ -7,7 +7,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed; /* Para que la imagen se mantenga fija mientras se desplaza */
+    background-attachment: fixed;
     font-family: "Rubik", sans-serif;
 }
 .Parrafo {
@@ -34,7 +34,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    min-height: 100vh; /* Esto centra verticalmente la sección */
+    min-height: 100vh;
     padding: 20px;
 }
 #Indice {
@@ -43,10 +43,10 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    min-height: 100vh; /* Esto centra verticalmente la sección */
+    min-height: 100vh; 
     padding: 20px;
 }
-#Comenzar, #Seleccionar, #Finalizar, #Finalizar2, #Comenzar2, #Finalizar3 {
+#Comenzar, #Seleccionar, #Finalizar, #Finalizar2, #Comenzar2, #Finalizar3, #Volver {
     color: rgb(255, 255, 255);
     background-color: transparent;
     border-radius: 5px;
@@ -68,6 +68,6 @@ input:checked + label {
     align-items: center;
     justify-content: center;
     text-align: center;
-    min-height: 100vh; /* Esto centra verticalmente la sección */
+    min-height: 100vh;
     padding: 20px;
 }
