@@ -77,3 +77,13 @@ input:checked + label {
 label:hover {
     color: rgb(0, 217, 255);
 }
+@media (max-width: 768px) {
+    .container {
+      width: 100%;
+      padding: 0;
+    }
+    
+    .navbar {
+      display: none;
+    }
+  }
