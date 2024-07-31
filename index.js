@@ -160,16 +160,16 @@ document.getElementById('Finalizar').addEventListener('click', function() {
         confetti.classList.add('confetti');
         confetti.style.left = Math.random() * 100 + 'vw';
         confetti.style.backgroundColor = getRandomColor();
-        confetti.style.animationDelay = Math.random() * 2 + 's';
+        confetti.style.animationDelay = Math.random() * 5 + 's';
         confettiContainer.appendChild(confetti);
     }
 
     setTimeout(() => {
         confettiContainer.innerHTML = '';
-    }, 5000); // Elimina el confeti después de 5 segundos
+    }, 20000); // Elimina el confeti después de 5 segundos
 });
 function getRandomColor() {
-    const colors = ['#48C9B0', '#8E44AD', '#2ECC71', '#F1C40F', '#E91E63', '#1976D2', '#FF0033'];
+    const colors = ['#48C9B0', '#8E44AD', '#2ECC71', '#F1C40F', '#E91E63', '#1976D2', '#FF0033', '#0000FF', '#808B96 '];
     return colors[Math.floor(Math.random() * colors.length)];
 }
 window.addEventListener('load',IniciarPagina)
