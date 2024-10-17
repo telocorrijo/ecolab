@@ -1,3 +1,4 @@
+let sonido = new Audio('y2mate.com - Efecto de sonido  Ganador No copyright.mp3')
 let Centro = document.getElementById('centro')
 let Indice = document.getElementById('Indice')
 Indice.style.display = 'none'
@@ -33,6 +34,7 @@ let Volver = document.getElementById('Volver')
 Volver.addEventListener('click', VolverInicio)
 function VolverInicio() {
     location.reload()
+    sonido.pause();
 }
 function IniciarPagina() {
     let InicioPagina = document.getElementById('Comenzar')
@@ -133,7 +135,7 @@ document.getElementById('Finalizar3').addEventListener('click', function() {
         confetti.style.animationDelay = Math.random() * 2 + 's';
         confettiContainer.appendChild(confetti);
     }
-
+    sonido.play();
     setTimeout(() => {
         confettiContainer.innerHTML = '';
     }, 5000); // Elimina el confeti después de 5 segundos
@@ -148,7 +150,7 @@ document.getElementById('Finalizar2').addEventListener('click', function() {
         confetti.style.animationDelay = Math.random() * 2 + 's';
         confettiContainer.appendChild(confetti);
     }
-
+    sonido.play();
     setTimeout(() => {
         confettiContainer.innerHTML = '';
     }, 5000); // Elimina el confeti después de 5 segundos
@@ -163,7 +165,7 @@ document.getElementById('Finalizar').addEventListener('click', function() {
         confetti.style.animationDelay = Math.random() * 5 + 's';
         confettiContainer.appendChild(confetti);
     }
-
+    sonido.play();
     setTimeout(() => {
         confettiContainer.innerHTML = '';
     }, 20000); // Elimina el confeti después de 5 segundos
